@@ -28,6 +28,7 @@ input, textarea{
 input:focus, textarea:focus{
 	background-color: lightgray;
 }
+
 .button{
 	border-radius: 12px;
 	background-color: #fd324e;
@@ -136,11 +137,13 @@ input:focus, textarea:focus{
 }
 .contenedor-guitarra-a{
 	padding-left: 50px;
+	position: relative;
+	bottom: 30px;
 }
 .contenedor-guitarra-b{
 	margin-left: 370px;
 	position: relative;
-	bottom: 90px;
+	bottom: 50px;
 }
 .footer{
 	background-color: #273b47;
