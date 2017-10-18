@@ -7,7 +7,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Allerta|Montserrat:400,700" rel="stylesheet">
 </head>
 <body>
-	<header id="header" class="header"><!--header-->
+	<header id="header" class="header contenedor"><!--header-->
 		<figure class="logotipo"><!--logotipo-->
 			<img src="img/invie.png" alt="Invie logotipo" width="186" height="60">
 		</figure>
@@ -26,30 +26,57 @@
 		</nav>
 	</header>
 	<section id="portada" class="portada"><!--Portada-->
-		<h1 class="titulo">Guitarras inviesibles</h1><!--titulo-->
-		<h3 class="title-a">Sé la estrella de rock que siempre quisiste ser</h3>
-		<button>Conoce más</button><!--boton-->
+		<div class="contenedor">
+			<h1 class="titulo">Guitarras inviesibles</h1><!--titulo-->
+			<h3 class="title-a">Sé la estrella de rock que siempre quisiste ser</h3>
+			<button>Conoce más</button><!--boton-->
+		</div>
 	</section>
-	<section id="guitarras" class="guitarras"><!--guitarras-->
+	<section id="guitarras" class="guitarras contenedor"><!--guitarras-->
 		<h2>Nuestras guitarras </h2><!--titulo-->
 		<article class="guitarra"><!--guitarra 1-->
-			<img src="img/invie-acustica.png" alt="Guitarra Invie Acustica" width="200">
-			<h3 class="title-b">Invie Acústica</h3>
-			<ol>
-				<li>Estilo vintage</li>
-				<li>Madera pura</li>
-				<li>Incluye estuche invisible de aluminio</li>
-			</ol>
+			<img src="img/invie-acustica.png" alt="Guitarra Invie Acustica" width="350" class="derecha">
+			<div class="contenedor-guitarra-a">
+				<h3 class="title-b">Invie Acústica</h3>
+				<ol>
+					<li>Estilo vintage</li>
+					<li>Madera pura</li>
+					<li>Incluye estuche invisible de aluminio</li>
+				</ol>
+			</div>
 		</article>
 		<article class="guitarra"><!--guitarra 2-->
-			<img src="img/invie-classic.png" alt="Guitarra Invie Classic" width="200">
-			<h3  class="title-b">Invie Classic</h3>
-			<ol>
-				<li>Estilo vintage</li>
-				<li>Liviana</li>
-				<li>Inicia tu camino como rockstar</li>
-			</ol>
+			<img src="img/invie-classic.png" alt="Guitarra Invie Classic" width="350" class="izquierda">
+			<div class="contendedor-guitarra-b">
+				<h3  class="title-b">Invie Classic</h3>
+				<ol>
+					<li>Estilo vintage</li>
+					<li>Liviana</li>
+					<li>Inicia tu camino como rockstar</li>
+				</ol>
+			</div>
 		</article>
 	</section>
+	<footer class="footer">
+		<div class="contenedor">
+			<div class="contacto">
+				<img src="img/invie.png" alt="logotipo blanco">
+				<a href="tel:+525545179084"><strong>Teléfono</strong><span>5545179084</span></a>
+				<a href="mailto:nohemi.baol@gmail.com"><strong>E-mail</strong><span>nohemi.baol@gmail.com</span></a>
+			</div>
+			<div class="formulario">
+				<label for="nombre">Nombre</label>
+				<input type="text" required id="nombre">
+				<label for="email">E-mail</label>
+				<input type="email" required id="email">
+				<label for="mujer">
+					<input type="radio" id="mujer" name="sexo">Mujer
+				</label>
+				<label for="hombre">
+					<input type="radio" id="hombre" name="sexo">Hombre
+				</label>
+			</div>
+		</div>
+	</footer>
 </body>
 </html>
